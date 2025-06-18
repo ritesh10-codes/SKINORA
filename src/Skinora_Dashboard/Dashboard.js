@@ -40,11 +40,11 @@ function Dashboard() {
         <img src={require('../LOGO.jpeg')} alt="Clinic Logo" className="logo-img" />
         </div>
         <nav className="nav">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact us</a>
+          <a href="/home">Home</a>
+          <a href="/about">About</a>
+          <a href="/gallery">Gallery</a>
+          <a href="/services">Services</a>
+          <a href="/contact">Contact us</a>
         </nav>
       </header>
       <section className="image-slider">
@@ -62,20 +62,66 @@ function Dashboard() {
       </section>
 
       <section className="book-section">
-        <button className="book-btn">Book Appointment</button>
-      </section>
+  <a 
+    href="https://docs.google.com/forms/d/e/1FAIpQLSdeBLTcEfCteiqRmEfMukDRP5_RDR7jlrfQQknVp6w3dfzNmw/viewform" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <button className="book-btn">Book Appointment</button>
+  </a>
+</section>
 
-      <section className="book-section">
+      {/* <section className="book-section">
         <button className="book-btn">Book Appointment</button>
       </section>
 
       <section className="book-section">
         <button className="book-btn">Book appoint</button>
-      </section>
+      </section> */}
 
       <section className="whats-new">WHAT’s NEW</section>
 
-      <footer className="footer">Footer</footer>
+      <footer className="footer">
+  <div className="footer-container">
+    <div className="footer-section">
+      <h3>About Us</h3>
+      <p>
+        SKINORA is a trusted dermatology and cosmetology clinic offering expert care for skin, hair, and laser treatments.
+      </p>
+    </div>
+
+    <div className="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdeBLTcEfCteiqRmEfMukDRP5_RDR7jlrfQQknVp6w3dfzNmw/viewform">Book Appointments</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div className="footer-section">
+      <h3>Contact Us</h3>
+      <p>📍 18 Latitude Mall,Kate Wasti ,Punawale ,Pune</p>
+      <p>📞 +91 9764949469</p>
+      <p>📧 hdsarode@gmail.com</p>
+    </div>
+
+    <div className="footer-section">
+      <h3>Follow Us</h3>
+      <div className="social-icons">
+        <a href="https://facebook.com" target="_blank" rel="noreferrer">🌐 Facebook</a><br />
+        <a href="https://instagram.com" target="_blank" rel="noreferrer">📸 Instagram</a><br />
+        <a href="https://wa.me/919082615172" target="_blank" rel="noreferrer">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <div className="footer-bottom">
+    <p>&copy; {new Date().getFullYear()} SKINORA Clinic. All rights reserved.</p>
+  </div>
+</footer>
+
     </div>
   );
 }
