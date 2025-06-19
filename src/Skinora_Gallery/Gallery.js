@@ -1,28 +1,28 @@
 import React from "react";
-import "./About.css";
+import "./Gallery.css"; // Renamed CSS file accordingly
 
-const doctors = [
-  {
-    name: "Dr. Hemesh Sarode",
-    specialization: "Dermatologist, Cosmetologist & Trichologist",
-    image: "/l5.jpeg",
-    description:
-      "Dr. Hemesh Sarode specializes in dermatology and cosmetology, with expertise in laser treatments, acne scar therapy, vitiligo surgery, and more. He combines advanced medical knowledge with a patient-first approach.",
-  },
-  {
-    name: "Dr. Jayashree Patil",
-    specialization: "Skin & Aesthetic Specialist",
-    image: "/l6.jpeg",
-    description:
-      "Dr. Jayashree Patil is known for her commitment to aesthetic care and non-invasive cosmetic solutions. She provides expert services in PRP, anti-aging treatments, pigmentation, and personalized skincare.",
-  },
+const galleryItems = [
+  { title: "Dr. Hemesh Sarode", image: "/g1.png" },
+  { title: "Dr. J", image: "/g2.png" },
+  { title: "Alopecia Areata", image: "/g5.png" },
+  { title: "Face Acne", image: "/g6.png" },
+  { title: "Skin Pigmentation", image: "/g7.png" },
+  { title: "Dandruff", image: "/g8.png" },
+  { title: "Hydrafacial", image: "/g9.png" },
+  { title: "Laser Hair Removal", image: "/g10.webp" },
+//   { title: "Hair Fall Treatment", image: "/g11.png" },
+  { title: "Chemical Peel", image: "/g12.png" },
+  { title: "Electro Cautery Treatment", image: "/g13.png" },
+  { title: "Electro Cautery Treatment", image: "/g14.png" },
+//   { title: "Electro Cautery Treatment", image: "/g15.png" },
+  { title: "Electro Cautery Treatment", image: "/g16.png" },
 ];
 
-const About = () => {
+const Gallery = () => {
   return (
     
-    <div className="doctors-page">
-      <header className="header">
+    <div className="gallery-page">
+         <header className="header">
         <div className="logo">
         <img src={require('../LOGO.jpeg')} alt="Clinic Logo" className="logo-img" />
         </div>
@@ -34,45 +34,43 @@ const About = () => {
           <a href="/contact">Contact us</a>
         </nav>
       </header>
-      <h2>Our Doctors</h2>
-      <div className="doctor-list">
-        {doctors.map((doc, index) => (
-          <div className="doctor-card" key={index}>
-            <img src={doc.image} alt={doc.name} className="doctor-img" />
-            <div className="doctor-info">
-              <h3>{doc.name}</h3>
-              <p className="specialization">{doc.specialization}</p>
-              <p>{doc.description}</p>
-            </div>
+      <h2 className="gallery-heading">Treatment Gallery</h2>
+      <div className="gallery-grid">
+        {galleryItems.map((item, index) => (
+          <div className="gallery-card" key={index}>
+            <img
+              src={item.image.trim()}
+            //   alt={item.title}
+              className="gallery-img"
+            />
+            {/* <h3 className="gallery-title">{item.title}</h3> */}
           </div>
         ))}
       </div>
 
-      {/* Footer */}
       <footer className="footer">
         <div className="footer-container">
           <div className="footer-section">
             <h3>About Us</h3>
             <p>
-              SKINORA is a trusted dermatology and cosmetology clinic offering
-              expert care for skin, hair, and laser treatments.
+              SKINORA is a trusted dermatology and cosmetology clinic offering expert care for skin, hair, and laser treatments.
             </p>
           </div>
 
           <div className="footer-section">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#about">About</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/about">About</a></li>
               <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdeBLTcEfCteiqRmEfMukDRP5_RDR7jlrfQQknVp6w3dfzNmw/viewform">Book Appointments</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
 
           <div className="footer-section">
             <h3>Contact Us</h3>
             <p>📍 18 Latitude Mall, Kate Wasti, Punawale, Pune</p>
-            <p>📞 +91 90826 15172</p>
+            <p>📞 +91 9764949469</p>
             <p>📧 hdsarode@gmail.com</p>
           </div>
 
@@ -94,4 +92,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Gallery;

@@ -1,6 +1,6 @@
 /* Container Styling */
 .doctors-page {
-    padding: 60px 20px;
+    /* padding: 60px 20px; */
     text-align: center;
     background: linear-gradient(to right, #fdfbfb, #ebedee);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -81,4 +81,68 @@
       font-size: 28px;
     }
   }
+
+  /* ========== Header ========== */
+  .header {
+    background: linear-gradient(to right, #1d976c, #93f9b9);
+    padding: 0px 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+    top: 0;
+    z-index: 1000;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Logo Image */
+  .logo-img {
+    max-height:200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    position: relative;
+    top: 20px;
+  }
+  
+  /* ========== Navigation ========== */
+  .nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: 24px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    font-weight: bold;
+    position: relative;
+    padding: 8px;
+  }
+  
+  .nav a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .nav a:hover {
+    color: #003300;
+  }
+  
+  .nav a:hover::after {
+    width: 100%;
+  }
+  
   

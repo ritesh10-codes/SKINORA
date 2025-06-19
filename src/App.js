@@ -4,6 +4,7 @@ import Dashboard from './Skinora_Dashboard/Dashboard';
 import About from './Skinora_About/About';
 import Services from './Skinora_Services/Services';
 import Contact from './Skinora_Contact/Contact';
+import Gallery from './Skinora_Gallery/Gallery';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/gallery" element={<Gallery />} />
+
 
 
       </Routes>

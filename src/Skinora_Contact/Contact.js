@@ -3,7 +3,20 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
+    
     <div className="contact-page">
+       <header className="header">
+        <div className="logo">
+        <img src={require('../LOGO.jpeg')} alt="Clinic Logo" className="logo-img" />
+        </div>
+        <nav className="nav">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/gallery">Gallery</a>
+          <a href="/services">Services</a>
+          <a href="/contact">Contact us</a>
+        </nav>
+      </header>
       <h2 className="contact-heading">Contact Us</h2>
 
       <div className="contact-container">

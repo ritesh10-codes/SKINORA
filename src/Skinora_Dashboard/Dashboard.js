@@ -40,7 +40,7 @@ function Dashboard() {
         <img src={require('../LOGO.jpeg')} alt="Clinic Logo" className="logo-img" />
         </div>
         <nav className="nav">
-          <a href="/home">Home</a>
+          <a href="/">Home</a>
           <a href="/about">About</a>
           <a href="/gallery">Gallery</a>
           <a href="/services">Services</a>
@@ -79,7 +79,32 @@ function Dashboard() {
         <button className="book-btn">Book appoint</button>
       </section> */}
 
-      <section className="whats-new">WHAT’s NEW</section>
+<section className="whats-new">
+  <h2 className="whats-new-heading">WHAT’S NEW</h2>
+  <div className="updates-grid">
+    <div className="update-card">
+      <h3>✨ New Laser Hair Removal Treatment</h3>
+      <p>We’ve introduced the latest Diode laser for painless hair removal. Book now!</p>
+      <span>June 18, 2025</span>
+    </div>
+    <div className="update-card">
+      <h3>💸 Flat 30% Off on Hydrafacial</h3>
+      <p>This monsoon, get glowing skin with our Hydrafacial. Offer valid till June 30!</p>
+      <span>June 15, 2025</span>
+    </div>
+    <div className="update-card">
+      <h3>📍 Free Skin Checkup Camp</h3>
+      <p>Join us on June 25 for a free skin diagnosis and expert consultation.</p>
+      <span>June 10, 2025</span>
+    </div>
+    <div className="update-card">
+      <h3>📢 Sunday OPD Now Open</h3>
+      <p>Dr. Hemesh Sarode will now be available every Sunday from 10 AM to 2 PM.</p>
+      <span>June 5, 2025</span>
+    </div>
+  </div>
+</section>
+
 
       <footer className="footer">
   <div className="footer-container">

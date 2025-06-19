@@ -3,30 +3,67 @@ import "./Services.css";
 
 const services = [
   {
-    title: "Acne & Scar Treatment",
-    image: "/services/acne.jpeg",
+    title: "Common Skin Rashes",
+    image: "/s3.jpeg  ",
   },
   {
-    title: "PRP Therapy",
-    image: "/services/prp.jpeg",
+    title: "Psoriasis",
+    image: "/s4.jpeg ",
   },
   {
-    title: "Laser Hair Removal",
-    image: "/services/laser.jpeg",
+    title: "Alopecia Areata",
+    image: "s5.jpeg ",
   },
   {
-    title: "Vitiligo Surgery",
-    image: "/services/vitiligo.jpeg",
+    title: "Face  Acne",
+    image: "s6.jpeg",
+  },
+ 
+  {
+    title: "Skin Pigmentation ",
+    image: "s7.jpeg ",
+  },
+  {
+    title: "Dandruff",
+    image: "s8.jpeg ",
+  },
+  {
+    title: "Hydrafacial",
+    image: "s9.jpeg ",
+  },
+  {
+    title: "Laser hair removal",
+    image: "s10.jpeg ",
   },
   {
     title: "Hair Fall Treatment",
-    image: "/services/hairfall.jpeg",
+    image: "s11.jpeg ",
+  },
+  {
+    title: "Chemical peel",
+    image: "s12.jpeg ",
+  },
+  {
+    title: "Elctro Cautery Treatment",
+    image: "s13.jpeg ",
   },
 ];
 
 const Services = () => {
   return (
     <div className="services-page">
+       <header className="header">
+        <div className="logo">
+        <img src={require('../LOGO.jpeg')} alt="Clinic Logo" className="logo-img" />
+        </div>
+        <nav className="nav">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/gallery">Gallery</a>
+          <a href="/services">Services</a>
+          <a href="/contact">Contact us</a>
+        </nav>
+      </header>
       <h2 className="services-heading">Our Services</h2>
       <div className="services-grid">
         {services.map((service, index) => (
